@@ -10,7 +10,7 @@ This repository contains the first project for the course "Introdução à Matem
 **Project Tasks:**
 # Integral Calculation Project
 
-This project involves calculating integrals of the form \( I_n(x) = \int_1^t t^n e^{-xt} dt \) for various values of \( n \) and \( x \). The tasks are divided into two main parts:
+This project involves calculating integrals of the form \( I_n(x) = \int_1^t t^n e^{-xt} \, dt \) for various values of \( n \) and \( x \). The tasks are divided into two main parts:
 
 1. **Integral Calculation using Matlab:**
     - Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \) ranging from 1 to 20.
@@ -25,7 +25,7 @@ This project involves calculating integrals of the form \( I_n(x) = \int_1^t t^n
 This README provides an overview of the tasks and the expected outcomes for the integral calculation project.
     - For each \( n \in \mathbb{N}_0 \) and \( x \in \mathbb{R} \), consider the integral:
             \[
-            I_n(x) = \int_1^t t^n e^{-xt} dt
+            I_n(x) = \int_1^t t^n e^{-xt} \, dt
             \]
       - (a) Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \in [1, 20] \). Organize the information in a table.
       - (b) 
@@ -48,4 +48,4 @@ This README provides an overview of the tasks and the expected outcomes for the 
              \]
          - The value of \( C \) indicates the degree of solar radiation concentration on the receiver as a function of the plate angle, the fraction \( f \) of its coverage, and the diameter \( d \) and height \( h \) of the collector.
          - For \( h = 300 \), \( f = 0.85 \), and \( d = 14 \), calculate the smallest positive angle less than 10° for which the concentration factor equals 1250 using the `QuasiNewton.m` function.
-         - Conduct a convergence study of the method (2) based on numerical results. Apply the method with different values of \( \epsilon \) (\( \epsilon = 10^{-1}, 10^{-2}, 10^{-3} \)) and, for each, record the number of iterations needed to meet a predefined stopping criterion. Also, estimate the asymptotic convergence coefficient in each case. Comment on the results.
+         - Conduct a convergence study of the method based on numerical results. Apply the method with different values of \( \epsilon \) (\( \epsilon = 10^{-1}, 10^{-2}, 10^{-3} \)) and, for each, record the number of iterations needed to meet a predefined stopping criterion. Also, estimate the asymptotic convergence coefficient in each case. Comment on the results.
