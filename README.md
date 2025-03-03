@@ -8,7 +8,21 @@ This repository contains the first project for the course "Introdução à Matem
     - Ideally, the codes should be in a single livescript file (excluding functions used in separate *.m files). A brief explanation of the codes used should be provided (either by writing a short text in the livescript file or commenting with % in front of some lines of code). Numerical results should be presented using `format long`.
 
 **Project Tasks:**
-1. **Integral Calculation:**
+# Integral Calculation Project
+
+This project involves calculating integrals of the form \( I_n(x) = \int_1^t t^n e^{-xt} dt \) for various values of \( n \) and \( x \). The tasks are divided into two main parts:
+
+1. **Integral Calculation using Matlab:**
+    - Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \) ranging from 1 to 20.
+    - Organize the results in a table for easy comparison.
+
+2. **Recurrence Relation and Matlab Function:**
+    - Validate the recurrence relation for \( x = 0 \).
+    - Define a Matlab function `IntegralIterado.m` that computes the first \( n \) terms of the sequence for given \( n \) and \( x \).
+    - Experiment with the function for \( n = 20 \), \( x = 1 \), and \( x = 5 \).
+    - Compare the results with those obtained in the first part and explain any differences observed.
+
+This README provides an overview of the tasks and the expected outcomes for the integral calculation project.
     - For each \( n \in \mathbb{N}_0 \) and \( x \in \mathbb{R} \), consider the integral:
             \[
             I_n(x) = \int_1^t t^n e^{-xt} dt
