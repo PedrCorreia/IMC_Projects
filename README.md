@@ -41,9 +41,9 @@ This project involves calculating integrals of the form $I_n(x) = \int_1^t t^n e
      - (a) Construct a Matlab function `QuasiNewton.m` to implement the modified Newton method. The input data are the function $f$, a value for $ \epsilon $, an initial approximation $ x_0 $ for the solution, the maximum number of iterations, and an error tolerance (associated with the absolute difference between two consecutive iterates). The output data are the sequence of calculated iterates and the corresponding error estimates.
      - (b) **Application: Concentrated Solar Power Production:**
          - In 1976, Lorin Vant-Hull proposed the following relation for the geometric concentration factor $ C $:
-             ```math
-             C = \frac{(h \cos(\theta))^2 f}{0.5 d^2 (1 + \sin(\theta) + 0.5 \cos(\theta))}
-             ```
+            ```math
+            C = \frac{\left( h \cos(\theta) \right)^2 f}{0.5 d^2 \left( 1 + \sin(\theta) + 0.5 \cos(\theta) \right)}
+            ```
          - The value of $ C $ indicates the degree of solar radiation concentration on the receiver as a function of the plate angle, the fraction $ f $ of its coverage, and the diameter $ d $ and height $ h $ of the collector.
          - For $ h = 300 $, $ f = 0.85 $, and $ d = 14 $, calculate the smallest positive angle less than 10° for which the concentration factor equals 1250 using the `QuasiNewton.m` function.
          - Conduct a convergence study of the method based on numerical results. Apply the method with different values of $ \epsilon \$ ($\ \epsilon = 10^{-1}, 10^{-2}, 10^{-3} $) and, for each, record the number of iterations needed to meet a predefined stopping criterion. Also, estimate the asymptotic convergence coefficient in each case. Comment on the results.
