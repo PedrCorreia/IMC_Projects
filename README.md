@@ -22,21 +22,21 @@ This project involves calculating integrals of the form $I_n(x) = \int_1^t t^n e
     - Compare the results with those obtained in the first part and explain any differences observed.
 
     - For each $n \in \mathbb{N}_0$ and $x \in \mathbb{R} $, consider the integral:
-    ```math
-    \left( I_n(x) = \int_1^t t^n e^{-xt} , dt )\right
-    ```
+    
+    $$ I_n(x) = \int_1^t t^n e^{-xt} , dt  $$
+
     - (a) Calculate $I_n(x)$ using Matlab's `integral` command for $x = 1$ and $x = 5$, with $n \in [1, 20]$. Organize the information in a table.
     - (b)
         - i. Show that the recurrence relation for $x = 0$ is valid:
 
-       $$\left( I_0(x) = 1, \quad x e^x I_n(x) = 1 - x^n I_{n-1}(x) + (-1)^n e^x, \quad \forall n \in \mathbb{N} )\right$$
+       $$ ( I_0(x) = 1, \quad x e^x I_n(x) = 1 - x^n I_{n-1}(x) + (-1)^n e^x, \quad \forall n \in \mathbb{N} ) $$
 
         - ii. Define a Matlab function `IntegralIterado.m` that receives an integer $n \geq 1$ and $x \in \mathbb{R} \setminus \{0\}$ and returns the first $n$ terms of the sequence (1) starting from $x$. Experiment with $n = 20$, $x = 1$, and $x = 5$. Compare with the result obtained in (a) and explain the observed difference.
 
 2. **Quasi-Newton Method:**
      - Consider the equation $f(x) = 0$. To avoid calculating the derivative in Newton's method, a modification can be made:
 
-        $$\left(x_{k+1} = x_k - \frac{f(x_k)}{f(x_k + \epsilon) - f(x_k)} )\right$$
+        $$ x_{k+1} = x_k - \frac{f(x_k)}{f(x_k + \epsilon) - f(x_k)} $$
    
      - (a) Construct a Matlab function `QuasiNewton.m` to implement the modified Newton method. The input data are the function $f$, a value for $ \epsilon $, an initial approximation $ x_0 $ for the solution, the maximum number of iterations, and an error tolerance (associated with the absolute difference between two consecutive iterates). The output data are the sequence of calculated iterates and the corresponding error estimates.
      - (b) **Application: Concentrated Solar Power Production:**
