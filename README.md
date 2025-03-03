@@ -21,10 +21,9 @@ This project involves calculating integrals of the form $I_n(x) = \int_1^t t^n e
 - Experiment with the function for $n = 20$, $x = 1$, and $x = 5$.
     - Compare the results with those obtained in the first part and explain any differences observed.
 
-This README provides an overview of the tasks and the expected outcomes for the integral calculation project.
     - For each $n \in \mathbb{N}_0$ and $x \in \mathbb{R} $, consider the integral:
     ```math
-    $I_n(x) = \int_1^t t^n e^{-xt} \, dt$
+    I_n(x) = \int_1^t t^n e^{-xt} \, dt
     ```
     - (a) Calculate $I_n(x)$ using Matlab's `integral` command for $x = 1$ and $x = 5$, with $n \in [1, 20]$. Organize the information in a table.
     - (b)
