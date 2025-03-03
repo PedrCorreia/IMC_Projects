@@ -9,17 +9,17 @@ This repository contains the first project for the course "Introdução à Matem
 
 **Project Tasks:**
 1. **Integral Calculation:**
-     - For each \( n \in \mathbb{N}_0 \) and \( x \in \mathbb{R} \), consider the integral:
-         \[
-         I_n(x) = \int_1^t t^n e^{-xt} dt
-         \]
-     - (a) Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \in [1, 20] \). Organize the information in a table.
-     - (b) 
-         - i. Show that the recurrence relation for \( x = 0 \) is valid:
-             \[
-             I_0(x) = 1, \quad x e^x I_n(x) = 1 - x^n I_{n-1}(x) + (-1)^n e^x, \quad \forall n \in \mathbb{N}
-             \]
-         - ii. Define a Matlab function `IntegralIterado.m` that receives an integer \( n \geq 1 \) and \( x \in \mathbb{R} \setminus \{0\} \) and returns the first \( n \) terms of the sequence (1) starting from \( x \). Experiment with \( n = 20 \), \( x = 1 \), and \( x = 5 \). Compare with the result obtained in (a) and explain the observed difference.
+    - For each \( n \in \mathbb{N}_0 \) and \( x \in \mathbb{R} \), consider the integral:
+            \[
+            I_n(x) = \int_1^t t^n e^{-xt} dt
+            \]
+      - (a) Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \in [1, 20] \). Organize the information in a table.
+      - (b) 
+            - i. Show that the recurrence relation for \( x = 0 \) is valid:
+                 \[
+                 I_0(x) = 1, \quad x e^x I_n(x) = 1 - x^n I_{n-1}(x) + (-1)^n e^x, \quad \forall n \in \mathbb{N}
+                 \]
+            - ii. Define a Matlab function `IntegralIterado.m` that receives an integer \( n \geq 1 \) and \( x \in \mathbb{R} \setminus \{0\} \) and returns the first \( n \) terms of the sequence (1) starting from \( x \). Experiment with \( n = 20 \), \( x = 1 \), and \( x = 5 \). Compare with the result obtained in (a) and explain the observed difference.
 
 2. **Quasi-Newton Method:**
      - Consider the equation \( f(x) = 0 \). To avoid calculating the derivative in Newton's method, a modification can be made:
