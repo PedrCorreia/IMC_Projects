@@ -10,7 +10,7 @@ This repository contains the first project for the course "Introdução à Matem
 **Project Tasks:**
 # Integral Calculation Project
 
-This project involves calculating integrals of the form $\ I_n(x) = \int_1^t t^n e^{-xt} \, dt \$ for various values of $\ n \$ and $\ x \$. The tasks are divided into two main parts:
+This project involves calculating integrals of the form $I_n(x) = \int_1^t t^n e^{-xt} \, dt$ for various values of $n$ and $x$. The tasks are divided into two main parts:
 
 - Calculate $\ I_n(x) \$ using Matlab's `integral` command for $\ x = 1 \$ and $\ x = 5 \$, with $\ n \$ ranging from 1 to 20.
 - Organize the results in a table for easy comparison.
