@@ -5,7 +5,7 @@ This repository contains the first project for the course "Introdução à Matem
 - **Due Date:** March 16, 2025
 - **Submission Instructions:** Each group must submit a PDF report and the Matlab scripts and livescripts on Fénix (Projects area) in a single zip file. Note that:
     - The PDF report should not exceed 10 pages and must contain answers to the questions and some examples of the implemented programs' functionality. Groups can prepare the report in Word or LaTex, as long as it is submitted in PDF. If you wish to use LaTex, you can request a template from the professor.
-    - Ideally, the codes should be in a single livescript file (excluding functions used in separate *.m files). A brief explanation of the codes used should be provided (either by writing a short text in the livescript file or commenting with % in front of some lines of code). Numerical results should be presented using `format long`.
+    - Ideally, the codes should be in a single livescript file (excluding functions used in separate *.m files). A brief explanation of the codes used should be provided (either by writing a short text in the livescript file or commenting with `%` in front of some lines of code). Numerical results should be presented using `format long`.
 
 **Project Tasks:**
 # Integral Calculation Project
@@ -13,7 +13,7 @@ This repository contains the first project for the course "Introdução à Matem
 This project involves calculating integrals of the form \( I_n(x) = \int_1^t t^n e^{-xt} \, dt \) for various values of \( n \) and \( x \). The tasks are divided into two main parts:
 
 1. **Integral Calculation using Matlab:**
-    - Calculate \( I_n(x) \) using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \) ranging from 1 to 20.
+    - Calculate $\`( I_n(x) )\`$   using Matlab's `integral` command for \( x = 1 \) and \( x = 5 \), with \( n \) ranging from 1 to 20.
     - Organize the results in a table for easy comparison.
 
 2. **Recurrence Relation and Matlab Function:**
